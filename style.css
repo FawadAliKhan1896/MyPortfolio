@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 #logo-text {
    font-family: "Oooh Baby", cursive;
   font-weight: 700;
@@ -12,6 +15,9 @@
 }
 #logo-text:hover{
   text-shadow: 1px 2px 2px red;
+}
+.logo a{
+  text-decoration: none;
 }
 header{
   display: flex;
@@ -44,6 +50,9 @@ header{
 }
 .nav-bar a:hover{
   background-color: rgba(128, 128, 128, 0.093);
+}
+#hambar{
+  display: none;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -786,8 +795,19 @@ input:checked + .slider:before {
   .nav-bar{
     display: none;
   }
+  .switch{
+    margin-left: 300px;
+    margin-top: 10px;
+  }
+  #hambar{
+    display: block;
+    margin-right: 80px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
   .logo h1{
-    font-size: 40px;
+    font-size: 35px;
+    width: 210px;
   }
   #body{
     margin-top: 80px;
@@ -806,19 +826,19 @@ input:checked + .slider:before {
     font-size: 60px;
     width: 500px;
     margin-top: 150px;
-    margin-left: -140px;
+    margin-left: -180px;
   }
   .body-content-1 p{
-    font-size: 35px;
-    width: 700px;
+    font-size: 30px;
+    width: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: -280px;
+    margin-left: -250px;
   }
   .social-media-cont{
     font-size: 1.5rem;
     position: relative;
-    left: -100px;
+    left: -110px;
 }
 .social1{
   height: 3.5rem;
@@ -856,6 +876,8 @@ input:checked + .slider:before {
 }
 .connect-cont{
   margin-left: -150px;
+  position: relative;
+  right: 40px;
 }
 .connect-cont a{
   height: 70px;
@@ -864,6 +886,10 @@ input:checked + .slider:before {
 }
 .body-content-2 img{
   margin-left: 120px;
+}
+#skills{
+  position: relative;
+  left: -40px;
 }
 .skills-container{
   display: block;
@@ -889,6 +915,9 @@ input:checked + .slider:before {
   font-size: 30px;
   margin-top: 10px;
 }
+.skill-line i{
+  margin-top: 20px;
+}
 .skills-content3{
   margin-left: 200px;
   display: block;
@@ -896,6 +925,11 @@ input:checked + .slider:before {
 .skills-content3 img{
   height: 350px;
   width: 450px;
+  margin-left: -20px;
+}
+#proficiency{
+  position: relative;
+  left: -70px;
 }
 .proficiency-cont{
   margin-left: 120px;
@@ -926,6 +960,10 @@ input:checked + .slider:before {
   background-color: #977ddb;
   display: block;
 }
+#education{
+  position: relative;
+  left: -50px;
+}
 .education-cont{
   width: 600px;
 }
@@ -947,6 +985,10 @@ input:checked + .slider:before {
 .edu-title ul{
   font-size: 25px;
 }
+#experience{
+  position: relative;
+  left: -50px;
+}
 .experience-cont{
   display: block;
   margin-left: 220px;
@@ -967,6 +1009,10 @@ input:checked + .slider:before {
   height: 580px;
   padding-top: 20px;
 }
+#projects{
+  position: relative;
+  left: -50px;
+}
 .project-sub-cont{
   display: block;
   margin-left: 100px;
@@ -975,6 +1021,10 @@ input:checked + .slider:before {
 }
 #more-projects{
   margin-left: 300px;
+}
+#blogs{
+  position: relative;
+  left: -50px;
 }
 #blogs h1{
   margin-bottom: 20px;
@@ -985,6 +1035,10 @@ input:checked + .slider:before {
 .blogs-cont{
   display: block;
   margin-left: 100px;
+}
+#talk{
+  position: relative;
+  left: -50px;
 }
 #talk h1{
   margin-bottom: 20px;
@@ -997,7 +1051,9 @@ input:checked + .slider:before {
 }
 /*ABOUT ME*/
 #about-me{
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  position: relative;
+  left: -50px;
 }
 .about-pic img{
   height: 200px;
@@ -1023,5 +1079,28 @@ input:checked + .slider:before {
 #special{
   position: relative;
   left: 120px;
+}
+#hambar1{
+  background-color: #523994;
+  height: 500px;
+  width: 750px;
+  margin-bottom: -100px;
+  z-index: -1;
+  display: none;
+  transition: 1s;
+}
+#hambar1 a{
+  color: #fff;
+  font-size: 40px;
+  display: block;
+  margin-top: 30px;
+  position: relative;
+  top: 30px;
+  padding-left: 40px;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #4b3194;
 }
 }
